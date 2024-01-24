@@ -9,7 +9,10 @@ string_splosion('abc') → 'aababc'
 string_splosion('ab') → 'aab'
 '''
 def string_splosion(str):
-    for x in len(str)<0:
-        return str[x]
+    str1 = ""
+    for n in range(0,len(str)+1):
+        str1 +=str[:n:]
+    return str1
+
 print(string_splosion("code"))
 
