@@ -10,7 +10,11 @@ max_end3([11, 5, 9]) → [11, 11, 11]
 max_end3([2, 11, 3]) → [3, 3, 3]
 '''
 def max_end3(nums):
-    num=max(nums)
-    return nums.index(num)
-
-print(max_end3([1, 2, 3]))
+    for i in range(0, len(nums)):
+        if nums[0]>nums[2]:
+           nums[i]=nums[0]
+        else:
+            nums[i]=nums[2]
+    return nums
+    
+print(max_end3([2, 11, 3]))
