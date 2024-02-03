@@ -10,7 +10,6 @@ count_hi('hihi') → 2
 '''
 def count_hi(str):
         str="a"+str
-        if str.find("hi"):      
-            return str.count("hi")
+        return str.count("hi")
             
-print(count_hi('hi'))
+print(count_hi('hisshi'))
